@@ -13,7 +13,7 @@ The app should be available at http://localhost:8080/weather
 # About rubiera
 This service make use of a couple of APIs to query location(https://api.opencagedata.com) and weather(http://api.openweathermap.org).
 
-Developed in .NET Core 3.0.0
+Developed in .NET Core 3.0
 
 #### Both APIs has usage restrictions:
 ##### https://api.opencagedata.com
