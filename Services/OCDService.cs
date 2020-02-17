@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Concurrent;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using rubiera.Exceptions;
@@ -94,7 +95,7 @@ namespace rubiera.Services
 
                 if (loc != null)
                 {
-                    Task.Factory.StartNew(() => processGeolocationQueries(loc));
+                    ThreadPool.QueueUserWorkItem((ignored) => processGeolocationQueries(loc));
                 }
 
                 await Task.Delay(TimeSpan.FromSeconds(1));

@@ -20,7 +20,7 @@
     "rubiera": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/weather",
+      "launchUrl": "weather",
       "applicationUrl": "https://localhost:8080",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
