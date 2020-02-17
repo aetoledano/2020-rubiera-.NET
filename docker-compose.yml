@@ -1,0 +1,8 @@
+version: '2.3'
+
+services:
+  weather-client-dotnet:
+    image: weather-client-dotnet
+    build: .
+    ports:
+      - "8080:80"

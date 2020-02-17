@@ -1,16 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using rubiera.Services;
 
 namespace rubiera
@@ -33,7 +26,6 @@ namespace rubiera
             services.AddControllers();
 
             //register services instances
-            //services.AddSingleton<IHostedService, OCDService>();
             services.AddSingleton(typeof(OCDService));
             services.AddSingleton(typeof(OWMService));
             services.AddSingleton(typeof(RestClient));
